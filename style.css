@@ -81,6 +81,7 @@ h2{
 /* Section About */
 .section__about--text{
     display: flex;
+    width: 80%;
     font-family: 'HKGrotesk', sans-serif;
     flex-direction: column;
     text-align: center;
@@ -260,6 +261,7 @@ h2{
                 width: 40%;
             }
             .image__about:nth-child(1){
+                padding-top: 10%;
                 align-self: flex-start;
             }
             .image__about:nth-child(2){
@@ -311,11 +313,11 @@ h2{
             .section__footer{
                 height: 80vh;
                 align-items: flex-start;
-                padding-left: 5%;
+                
             }
             .section__footer h2{
                 font-size: 4em;
-                
+                padding-left: 5%;
                 text-align: left;
                 width: 25%;
             }
