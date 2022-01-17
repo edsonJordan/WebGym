@@ -219,3 +219,119 @@ h2{
 .footer__list li  span{
     font-family: 'HKGrotesk', sans-serif;
 }
+        @media (min-width: 768px) {  
+            h2{
+                font-size: 2.5em;
+                font-weight: 200;
+                letter-spacing: .05em;
+            }
+            .section__span{
+                width: 50%;
+            }
+            .section__about--text, .section__services--text{
+                align-items: center;
+            }
+            /* Section About */
+            .section__about{
+                flex-direction: row;
+                height: 100vh;
+            }
+            .section__about--text{
+                width:90%;
+                padding-left: 5%;
+            }
+            .section__about--text h2{
+                font-size: 4.5em;
+                text-align: left;
+            }
+            .section__about--text .section__span{
+                text-align: left;
+                width: 75%;
+                font-size: 1.5em;
+                align-self: start;
+            }
+            .section__about--images{
+                justify-content: space-evenly;
+                height: 100%;
+
+            }
+            .image__about{
+                height: 70%;
+                width: 40%;
+            }
+            .image__about:nth-child(1){
+                align-self: flex-start;
+            }
+            .image__about:nth-child(2){
+                align-self: flex-end;
+            }
+            .btn__about{
+               align-self: flex-start;
+            }
+            /* Section Services */
+            .section__services--text{
+                width: 100%;
+            }
+            .section__services--text h2{
+                font-size: 4.5em;
+            }
+            .section__services--text .section__span{
+                font-size: 1.5em;
+            }
+            .section__services--cards{
+                width: 100%;
+                justify-content: space-around;
+                column-gap: 0;
+                overflow-x: hidden;
+                
+            }
+            .card__services{
+                min-width: auto;
+                width: 25%;
+            }
+            .card__services span{
+                font-size: 1.5em;
+            }
+
+            /* Section Before and After */
+            .section__beforeANDafter--cards{
+                width: 100%;
+                justify-content: space-evenly;
+                column-gap: 0;
+                overflow-x: hidden;
+            }
+            .card__beforeANDafter{
+                min-width: auto;
+                width: 28%;
+            }
+            .card__beforeANDafter span{
+                height: 40%;
+            }
+            /* Section Footer */
+            .section__footer{
+                height: 80vh;
+                align-items: flex-start;
+                padding-left: 5%;
+            }
+            .section__footer h2{
+                font-size: 4em;
+                
+                text-align: left;
+                width: 25%;
+            }
+            /* Footer */
+            .footer{
+                height: 20vh;
+            }
+            .footer__list{
+                width: 100%;
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: row;
+            }
+            .footer__list li{
+                font-size: 1.5em;
+                text-align: left;
+                width: 25%;
+            }
+        }
