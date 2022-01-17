@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Karla:wght@200;300;400;600;800&display=swap');
+@font-face {
+    font-family: HKGrotesk;
+    src: url("source/HKGrotesk-Medium.otf") format("opentype");
+}
+:root{
+    --first-color: #F9EF23;
+    --second-color: #081114;
+    --color--white: #fff;
+    --color-fourth: #141414;
+}
+
+body{
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    box-sizing: border-box;
+    object-fit: contain;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section__portada{
+    background-image: url('images/image-portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(0.8);
+}
+.section__about, .section__services, .section__beforeANDafter{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color-fourth) ;
+    width: 100%;
+    justify-content: space-evenly;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    letter-spacing: .08em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color--white);
+}
+h2{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .08em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--first-color);
+}
+ h1 span{
+    color: var(--first-color);
+}
+.btn__portada{
+    font-family: 'HKGrotesk', sans-serif;
+    letter-spacing: .05em;
+    background-color: var(--first-color);
+    padding: .5rem 2rem;
+    color: var(--second-color);
+}
+/* Section About */
+.section__about--text{
+    display: flex;
+    font-family: 'HKGrotesk', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color--white);
+    row-gap: 1.3rem;
+}
+.section__about--images{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.image__about{
+    width:40%;
+    height: 100%;
+}
+.btn__about{
+    font-family: 'HKGrotesk', sans-serif;
+    color: var(--color--white);
+    text-decoration: underline;
+    letter-spacing: .05em;
+}
+/* Section Services */
+.section__services--text{
+    display: flex;
+    font-family: 'HKGrotesk', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color--white);
+    row-gap: 1.3rem;
+}
+.section__services--cards{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 90%;
+    height: 50%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    column-gap: 15px;
+}
+.card__services{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    scroll-snap-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.card__services:nth-child(1){
+    background-image: url('images/image--section__services.jpg');
+}
+.card__services:nth-child(2){
+    background-image: url('images/image--section__services2.jpg');
+}
+.card__services:nth-child(3){
+    background-image: url('images/image--section__services3.jpg');
+}
+.card__services span{
+    font-family: 'Anton', sans-serif;
+    color: var(--color--white);
+    width: 70%;
+    font-size: 1.2em;
+    text-align: center;
+}
+/* Section Before and After */
+.section__beforeANDafter{
+    
+}
+.section__beforeANDafter--cards{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 90%;
+    height: 60%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    column-gap: 15px;
+}
+.card__beforeANDafter{
+    font-family: 'HKGrotesk', sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    scroll-snap-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    overflow: hidden;
+}
+.image__beforeANDafter{
+    object-fit: cover;
+    width:100%;
+    height: 50%;
+}
+.card__beforeANDafter span{
+    max-width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 1.9rem;
+    background-color: var(--first-color);
+}
+/* Section footer */
+.section__footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/image-portada__footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(0.8);
+}
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__list{
+    list-style: none;
+    text-align: center  ;
+    margin: 0;
+    padding: 0;
+}
+.footer__list li  span{
+    font-family: 'HKGrotesk', sans-serif;
+}
